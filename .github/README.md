@@ -30,5 +30,5 @@ Workflow notes:
 </p>
 
 <p align="center">
-  <img src="./metrics.plugin.stock.svg" alt="SPY stock prices" />
+  <img src="./stock.svg" alt="SPY stock prices" />
 </p>
