@@ -1,5 +1,11 @@
 # Arpan Patel
 
+## Contributions Calendar
+
+<p align="center">
+  <img src="./metrics.plugin.isocalendar.svg" alt="Contributions Calendar" />
+</p>
+
 <p align="center">
   <img src="./github-metrics.svg" alt="GitHub Metrics" />
 </p>
@@ -19,20 +25,8 @@
   </tr>
 </table>
 
-## Contributions Calendar
-
-<p align="center">
-  <img src="./metrics.plugin.isocalendar.svg" alt="Contributions Calendar" />
-</p>
-
 ## Stock Prices
-
-<!--
-Uncomment this block after your workflow is generating metrics.plugin.stock.svg
-and you have set plugin_stock_token: ${{ secrets.STOCK_TOKEN }} in GitHub Actions.
 
 <p align="center">
   <img src="./metrics.plugin.stock.svg" alt="Stock Prices" />
 </p>
--->
-
