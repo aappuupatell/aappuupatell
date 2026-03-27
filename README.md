@@ -1,1 +1,38 @@
-![Metrics](https://metrics.lecoq.io/aappuupatell?template=classic&base.indepth=true&isocalendar=1&stock=1&achievements=1&habits=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=true&base.hireable=false&base.skip=false&isocalendar=false&isocalendar.duration=full-year&habits=false&habits.from=700&habits.days=30&habits.facts=true&habits.charts=false&habits.charts.type=classic&habits.trim=false&habits.languages.limit=8&habits.languages.threshold=0%25&achievements=false&achievements.threshold=C&achievements.secrets=true&achievements.display=detailed&achievements.limit=0&stock=false&stock.symbol=SPY&stock.duration=1mo&stock.interval=15m&config.timezone=America%2FChicago&config.octicon=true)
+# Arpan Patel
+
+<p align="center">
+  <img src="./github-metrics.svg" alt="GitHub Metrics" />
+</p>
+
+## Activity Snapshot
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Recent Coding Habits</h3>
+      <img src="./metrics.plugin.habits.charts.svg" alt="Recent Coding Habits" />
+    </td>
+    <td width="50%" valign="top">
+      <h3>Achievements</h3>
+      <img src="./metrics.plugin.achievements.compact.svg" alt="Achievements" />
+    </td>
+  </tr>
+</table>
+
+## Contributions Calendar
+
+<p align="center">
+  <img src="./metrics.plugin.isocalendar.svg" alt="Contributions Calendar" />
+</p>
+
+## Stock Prices
+
+<!--
+Uncomment this block after your workflow is generating metrics.plugin.stock.svg
+and you have set plugin_stock_token: ${{ secrets.STOCK_TOKEN }} in GitHub Actions.
+
+<p align="center">
+  <img src="./metrics.plugin.stock.svg" alt="Stock Prices" />
+</p>
+-->
+
