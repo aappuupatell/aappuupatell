@@ -1,3 +1,1 @@
-<picture>
-  <img src="/github-metrics.svg" alt="Metrics">
-</picture>
+![Metrics](https://metrics.lecoq.io/aappuupatell?template=classic&isocalendar=1&habits=1&achievements=1&stock=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&isocalendar=false&isocalendar.duration=full-year&habits=false&habits.from=293&habits.days=30&habits.facts=false&habits.charts=true&habits.charts.type=graph&habits.trim=true&habits.languages.limit=8&habits.languages.threshold=0%25&achievements=false&achievements.threshold=C&achievements.secrets=true&achievements.display=compact&achievements.limit=0&stock=false&stock.symbol=SPY&stock.duration=3mo&stock.interval=15m&config.timezone=America%2FChicago)
