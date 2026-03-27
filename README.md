@@ -7,7 +7,3 @@
 <p align="center">
   <img src="metrics.isocalendar.svg" alt="Contributions Calendar" width="100%" />
 </p>
-
-<p align="center">
-  <img src="metrics.stock.svg" alt="Stock Prices" width="100%" />
-</p>
