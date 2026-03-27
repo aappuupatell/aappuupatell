@@ -1,1 +1,34 @@
-![Metrics](https://metrics.lecoq.io/aappuupatell?template=classic&isocalendar=1&habits=1&achievements=1&stock=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&isocalendar=false&isocalendar.duration=full-year&habits=false&habits.from=293&habits.days=30&habits.facts=false&habits.charts=true&habits.charts.type=graph&habits.trim=true&habits.languages.limit=8&habits.languages.threshold=0%25&achievements=false&achievements.threshold=C&achievements.secrets=true&achievements.display=compact&achievements.limit=0&stock=false&stock.symbol=SPY&stock.duration=3mo&stock.interval=15m&config.timezone=America%2FChicago)
+<!--
+This profile README expects these generated files in the root of your profile repo:
+- metrics.plugin.isocalendar.fullyear.svg
+- metrics.plugin.habits.charts.svg
+- metrics.plugin.achievements.compact.svg
+- metrics.plugin.stock.svg
+
+Workflow notes:
+- The GitHub Action job is attached to the `production` environment
+- Required environment secret: METRICS_TOKEN
+- Optional environment secret for stock widget: STOCK_TOKEN
+-->
+
+<h1 align="center">Hi, I'm Kumar 👋</h1>
+
+<p align="center">
+  Welcome to my GitHub profile.
+</p>
+
+<p align="center">
+  <img src="./metrics.plugin.isocalendar.fullyear.svg" alt="Isometric commit calendar" />
+</p>
+
+<p align="center">
+  <img src="./metrics.plugin.habits.charts.svg" alt="Coding habits and activity" />
+</p>
+
+<p align="center">
+  <img src="./metrics.plugin.achievements.compact.svg" alt="GitHub achievements" />
+</p>
+
+<p align="center">
+  <img src="./metrics.plugin.stock.svg" alt="SPY stock prices" />
+</p>
