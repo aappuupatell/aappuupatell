@@ -1,4 +1,3 @@
-# Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 
 on:
@@ -19,34 +18,84 @@ jobs:
       contents: write
 
     steps:
-      - uses: lowlighter/metrics@latest
+      # Main metrics card
+      - name: Main metrics
+        uses: lowlighter/metrics@latest
         with:
+          filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
           user: aappuupatell
           template: classic
           base: header, activity, community, repositories, metadata
           base_indepth: yes
+
+          config_timezone: America/Chicago
           config_octicon: yes
+
+      # Isocalendar - shown at the top of README
+      - name: Contributions calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          user: aappuupatell
+          base: ""
           config_timezone: America/Chicago
 
-          plugin_achievements: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_secrets: yes
-          plugin_achievements_threshold: C
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      # Habits widget
+      - name: Recent coding habits
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.habits.charts.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          user: aappuupatell
+          base: ""
+          config_timezone: America/Chicago
 
           plugin_habits: yes
-          plugin_habits_charts_type: classic
           plugin_habits_days: 30
           plugin_habits_facts: yes
           plugin_habits_from: 700
           plugin_habits_languages_limit: 8
           plugin_habits_languages_threshold: 0%
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
 
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+      # Achievements widget
+      - name: Achievements
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.achievements.compact.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          user: aappuupatell
+          base: ""
+          config_timezone: America/Chicago
+
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
+
+      # Stock widget
+      - name: Stock prices
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.stock.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          user: aappuupatell
+          base: ""
+          config_timezone: America/Chicago
 
           plugin_stock: yes
+          plugin_stock_token: ${{ secrets.STOCK_TOKEN }}
+          plugin_stock_symbol: SPY
           plugin_stock_duration: 1mo
           plugin_stock_interval: 15m
-          plugin_stock_symbol: SPY
