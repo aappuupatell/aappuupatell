@@ -1,70 +1,19 @@
 name: Metrics
-
 on:
-  schedule:
-    - cron: "0 0 * * *"
+  # Schedule daily updates
+  schedule: [{cron: "0 0 * * *"}]
+  # (optional) Run workflow manually
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - master
-
+  # (optional) Run workflow when pushing on master/main
+  push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment:
+    environment: 
       name: production
     permissions:
       contents: write
     steps:
-      - name: Isometric commit calendar
-        uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.isocalendar.fullyear.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          user: ${{ github.repository_owner }}
-          base: ""
-          config_timezone: America/Chicago
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-      - name: Coding habits and activity
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.habits.charts.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: ${{ github.repository_owner }}
-          base: ""
-          config_timezone: America/Chicago
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          plugin_habits_trim: yes
-
-      - name: Achievements
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.achievements.compact.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: ${{ github.repository_owner }}
-          base: ""
-          config_timezone: America/Chicago
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: C
-
-      - name: Stock prices (SPY)
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.stock.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: ${{ github.repository_owner }}
-          base: ""
-          config_timezone: America/Chicago
-          plugin_stock: yes
-          plugin_stock_token: ${{ secrets.STOCK_TOKEN }}
-          plugin_stock_symbol: SPY
-          plugin_stock_duration: 30d
-          plugin_stock_interval: 15m
